@@ -14,13 +14,23 @@ $("#shoot").click(function() {
     let userChoice= $("#input").val();
     $("#result").text(userChoice);
     if (randomNumber <= 0.33) {
-        debugger;
         console.log("paper");
+        let compChoice= "paper";
     } else if (randomNumber >= 0.34 && randomNumber <= 0.66) {
         console.log("rock");
+        let compChoice= "rock";
     } else {
+        let compChoice= "scissors";
         console.log("scissors");
     }
+
+if (userChoice === "scissors" ) {
+
+} else if (userChoice === "rock") {
+
+}else if (userChoice === "paper") {
+
+}
 });
 
 // DOCUMENT READY FUNCTION BELOW
